@@ -1,0 +1,202 @@
+/* Hide scrollbar but allow scrolling on all major browsers */
+body {
+    overflow-y: scroll; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+  
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera: Hide scrollbar */
+  }
+  
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space-around for more balanced spacing */
+    align-items: flex-start;
+    padding: 4rem 1.5rem; /* Slightly reduce side padding for better mobile fit */
+    max-width: 1200px; /* Reduce max width for better fit */
+    margin: auto;
+    gap: 2.5rem; /* Increase gap between items */
+    margin-top: 25px;
+}
+
+.about-content {
+    flex: 1 1 60%;
+    padding: 1.5rem 2rem; /* Adjust padding for more compact spacing */
+    max-width: 700px; /* Restrict max width for better balance */
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6; /* Enhance readability */
+}
+
+.about-title {
+    font-size: 1.75rem; /* Slightly increase title font size */
+    font-weight: 600;
+    color: #494a4b; /* Softer color for better contrast */
+    margin-bottom: 0.5rem;
+}
+
+.about-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #222; /* Darker color for more emphasis */
+    margin-bottom: 1.5rem; /* Add margin below heading */
+    width: 750px;
+}
+
+.about-list li {
+    font-size: 1.1rem;
+    color: #555; /* Softer color for list items */
+    margin-bottom: 0.8rem; /* Add spacing between items */
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 35%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.profile-img {
+    width: 320px; /* Slightly smaller for better responsiveness */
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%; /* Make image circular */
+    
+    margin-top: 50px; /* Reduce margin for better balance */
+}
+/* technologies */
+/* Technologies Section Styling */
+.technologies-section {
+   
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px; /* Soft rounded edges */
+   margin-right: 270px;
+   
+}
+
+.technologies-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #000001;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px; /* Adds a slight letter-spacing */
+    margin-bottom: 40px;
+    margin-left: -130px;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    margin-top: 37px;
+    
+}
+
+.technology-category {
+    margin-bottom: 1rem;
+    color: #555;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.technology-category h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-left: auto; /* Automatically adjusts left margin */
+    margin-right: auto; /* Automatically adjusts right margin */
+    text-align: left; /* Centers the text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: flex-start;
+    padding: 1rem; /* Added padding for spacing within the container */
+}
+
+.technology-list span {
+    background-color: #ffffff;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 500;
+    
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    border: 1px solid #000000; /* Corrected border property */
+}
+
+
+/* Button Styles */
+/* General Button Styles */
+.button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition for all properties */
+    display: inline-flex; /* Align icon and text inline */
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    margin-top: 1.2rem;
+}
+
+/* Resume Button Style */
+.button.resume-button {
+    background-color: #444; /* Darker shade for contrast */
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+.button.resume-button:hover {
+    background-color: #0066cc; /* Brighten color on hover */
+    color: #eaeaea; /* Lighten text for contrast */
+    border-color: #0056b3; /* Subtle border on hover */
+}
+
+/* Projects Button Style */
+.button.projects-button {
+    background-color: transparent;
+    color: #007acc; /* Brighter blue for contrast */
+    border: 2px solid #007acc;
+    margin-left: 8px; /* Space between buttons */
+}
+
+.button.projects-button:hover {
+    background-color: #d1ecff; /* Light blue on hover */
+    color: #005b99; /* Darker blue text on hover */
+    border-color: #005b99; /* Darker blue border on hover */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem; /* Adjust padding for better fit */
+    }
+
+    .about-content {
+        width: 100%;
+        text-align: center;
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .about-image {
+        margin-top: 2rem;
+    }
+
+    .button {
+        width: 100%; /* Full width on small screens */
+        justify-content: center; /* Center-align button content */
+    }
+}
+

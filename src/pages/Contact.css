@@ -1,0 +1,102 @@
+.contact-section {
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 50px;
+}
+
+.contact-title {
+    font-size: 2rem; /* Large font size for title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 10px; /* Space below title */
+    margin-right: 799px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-subtitle {
+    font-size: 1.2rem; /* Slightly smaller subtitle */
+    color: #666; /* Grey color for subtitle */
+    margin-bottom: 30px; /* Space below subtitle */
+    margin-left: 139px;
+}
+
+.social-icons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center icons */
+    gap: 20px; /* Space between icons */
+    margin-bottom: 30px; /* Space below icons */
+    margin-left: -1028px;
+}
+
+.social-icons a {
+    color: #333; /* Default color for icons */
+    font-size: 30px; /* Size of icons */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    
+}
+
+.social-icons a:hover {
+    color: #413d3d; /* Change color on hover */
+}
+
+.contact-form {
+    width: 1200px; /* Maximum width for the form */
+    margin: 0 auto; /* Center the form */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.form-row {
+    display: flex; /* Use flexbox for row layout */
+    justify-content: space-between; /* Space between items */
+    gap: 20px; /* Space between form groups */
+}
+
+.form-group {
+    flex: 1; /* Allow items to grow equally */
+    display: flex; /* Use flexbox for vertical layout */
+    flex-direction: column; /* Stack label and input vertically */
+    color: #000000;
+    align-items: flex-start; /* Align items to the left */
+}
+
+.label {
+    font-weight: bold; /* Make label bold */
+    margin-bottom: 5px; /* Space below label */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    color: #007bff; /* Keep the color as specified */
+}
+
+input, textarea {
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for input fields */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s ease; /* Transition for border color */
+    width: 100%; /* Ensure inputs take full width */
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.full-width {
+    width: 100%; /* Full width for message input */
+}
+
+.submit-button {
+    background-color: #444; /* Darker shade for contrast */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 12px; /* Padding for button */
+    font-size: 1rem; /* Font size for button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    margin-top: 20px; /* Space above button */
+}
+
+.submit-button:hover {
+    background-color: #595757; /* Darker shade for contrast */
+}

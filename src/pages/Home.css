@@ -1,0 +1,91 @@
+/* Apply box-sizing to all elements */
+
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: -30px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 15px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #2a87f0;
+  margin: 10px 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Button Styling */
+.home-button {
+  background-color: #444; /* Darker shade for contrast */
+  color: #fff; /* Text color */
+  padding: 12px 50px; /* Increase padding for an oval shape */
+  font-size: 1rem;
+  border: none; /* Remove border */
+  border-radius: 50px; /* Makes the button oval */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.home-button:hover {
+  background-color: #0056b3; /* Change color on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+
+/* social media  icons */
+.home-social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-social-icon {
+  font-size: 29px;
+  color: #333; /* Change color as needed */
+  transition: color 0.3s;
+}
+
+.home-social-icon:hover {
+  color: #007bff; /* Change hover color as needed */
+}
